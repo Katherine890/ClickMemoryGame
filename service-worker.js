@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Katherine890/ClickMemoryGame/precache-manifest.71504641c81d2c50c000d3cfdda643d5.js"
+  "/ClickMemoryGame/precache-manifest.93e896aa9935c54a92520a7a256faf30.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Katherine890/ClickMemoryGame/index.html", {
+workbox.routing.registerNavigationRoute("/ClickMemoryGame/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
