@@ -2,7 +2,7 @@
   "name": "clickmemorygame",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://katherine890.github.io/ClickMemoryGame/",
+  "homepage": "https://github.com/Katherine890/ClickMemoryGame",
   "dependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
