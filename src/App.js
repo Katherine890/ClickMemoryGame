@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+//import CartoonCard from "./components/CartoonCard";
+import cartoons from "./cartoons.json";
+import Score from "./components/Score";
 import './App.css';
 
 class App extends Component {
+  //state = {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+    state = {
+      cartoons,
+      // score: 0
+      //   newArray: []
+    // }
+  }
+  //}
+
+  // shuffleCartoon = cartoon => {
+
+  //   const cartoons = this.state.cartoons.map(cartoon => cartoon);
+  //   this.setState({ cartoons });
+  // };
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Wrapper>
+        <Title>Click Memory | Fairly Odd Parents</Title>
+        <Score></Score>
+      </Wrapper>
     );
   }
 }

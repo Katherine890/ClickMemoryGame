@@ -1,0 +1,16 @@
+ .score {
+    color: white;
+    position: fixed;
+    right: 5px;
+    top: 15px;
+    z-index: 3;
+} 
+
+.body {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 250px;
+    min-height: 80%;
+    width: 60%;
+}
