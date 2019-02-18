@@ -18,9 +18,9 @@ class Score extends React.Component {
       this.baseState = this.state;
   }
    
-  gameOver = () => {
-    this.setState(this.baseState)
-  }
+  // gameOver = () => {
+  //   this.setState(this.baseState)
+  // }
   
 
   // The render method returns the JSX that should be rendered
@@ -34,7 +34,7 @@ class Score extends React.Component {
           <CartoonCard
             score={this.state.score}
             handleIncrement={this.handleIncrement}
-            gameOver={this.gameOver}
+            // gameOver={this.gameOver}
             id={cartoon.id}
             key={cartoon.id}
             image={cartoon.image}
