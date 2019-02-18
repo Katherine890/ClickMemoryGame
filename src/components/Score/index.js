@@ -46,14 +46,17 @@ class Score extends React.Component {
   }
 
   correctGuess = (cartoonData) => {
-    const { topScore, score,} = this.state
-    this.setState({ score: score + 1, guessResponse: "Correct!", cartoons: this.shuffleArray(cartoonData) })
+    const { topScore, score, } = this.state
+    this.setState({ score: score + 1, guessResponse: "Correct!", topScore: this.state.score + 1, cartoons: this.shuffleArray(cartoonData) })
   }
 
   incorrectGuess = (cartoonData) => {
     let resetArray = cartoonData.map(cartoon => ({ ...cartoon, clicked: false }))
-    // const {topScore, score} = this.state
+     const {topScore, score} = this.state
     this.setState({ score: 0, guessResponse: "Incorrect!", cartoons: this.shuffleArray(resetArray) })
+    if(topScore > score) {
+      this.setState({topScore: topScore + this.state.score});
+    }
   }
 
   // The render method returns the JSX that should be rendered
@@ -62,7 +65,7 @@ class Score extends React.Component {
       <div className="body">
         <div className="score-body">
           <span className="navbar-brand mb-0 h1 guessResponse">{this.state.guessResponse}</span>
-          <p className="navbar-brand mb-0 h1 score">Score: {this.state.score}</p>
+          <p className="navbar-brand mb-0 h1 score">Score: {this.state.score} | Top Score: {this.state.topScore}</p>
         </div>
         {this.state.cartoons.map(cartoon => (
           <CartoonCard
