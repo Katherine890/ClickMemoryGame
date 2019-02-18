@@ -14,3 +14,11 @@
     min-height: 80%;
     width: 60%;
 }
+
+.guessResponse {
+    color: white;
+    z-index: 3;
+    position: fixed;
+    left: 850px;
+    top: 15px;
+}

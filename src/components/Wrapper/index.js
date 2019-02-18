@@ -7,7 +7,7 @@ function Wrapper(props) {
       <div className="container-fluid">
         <nav className="navbar navbar-dark bg-dark">
           {/* <span className="navbar-brand mb-0 h1 title"></span> */}
-          <span className="navbar-brand mb-0 h1 guessResponse">Correct/Wrong</span>
+          {/* <span className="navbar-brand mb-0 h1 guessResponse">{this.state.guessResponse}</span> */}
           {/* <span className="navbar-brand mb-0 h1 score">Score: {this.state.score}</span> */}
         </nav>
         <div className="jumbotron jumbotron-fluid"></div>
