@@ -56,13 +56,6 @@
     overflow: auto;
 }
 
-.guessResponse {
-    color: white;
-    z-index: 3;
-    position: absolute;
-    left: 850px;
-}
-
 .score {
     color: white;
     position: absolute;
