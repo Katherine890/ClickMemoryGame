@@ -5,7 +5,7 @@ A Fairly Odd Parents-themed memory game created with React. This game features t
 
 
 ## Playing the Game
-Each time the user clicks on a cartoon card, the cards will shuffle. By clicking on each character once, the user's score will increase by one. However clicking on the same card more than once will result in "game over" and the user's score will reset to zero.
+Each time the user clicks on a cartoon card, the cards will shuffle. By clicking on each character once, the user's score will increase by one. However clicking on the same card more than once will result in "game over" and the user's score will reset to zero. The top score (maximum highest score achieved) will display as the the game goes on.
 
 
 ## Getting Started
