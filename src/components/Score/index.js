@@ -48,15 +48,17 @@ class Score extends React.Component {
   correctGuess = (cartoonData) => {
     const { topScore, score, } = this.state
     this.setState({ score: score + 1, guessResponse: "Correct!", topScore: this.state.score + 1, cartoons: this.shuffleArray(cartoonData) })
+    // put new score into a const variable and 
+    const newScore = score + 1;
+    //returns the max highest score
+    const newTopScore = Math.max(newScore, topScore);
+    this.setState({score: newScore, topScore: newTopScore});
   }
 
   incorrectGuess = (cartoonData) => {
     let resetArray = cartoonData.map(cartoon => ({ ...cartoon, clicked: false }))
-     const {topScore, score} = this.state
+    const { topScore, score } = this.state
     this.setState({ score: 0, guessResponse: "Incorrect!", cartoons: this.shuffleArray(resetArray) })
-    if(topScore > score) {
-      this.setState({topScore: topScore + this.state.score});
-    }
   }
 
   // The render method returns the JSX that should be rendered
